@@ -3,7 +3,7 @@ name: Merge to master
 on:
   push:
     branches-ignore:
-      - master # This prevents the workflow from running on pushes to master
+      - main # This prevents the workflow from running on pushes to master
 
 jobs:
   merge:
