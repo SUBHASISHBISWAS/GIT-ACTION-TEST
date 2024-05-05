@@ -23,5 +23,5 @@ jobs:
         run: |
           git fetch origin main
           git checkout main
-          git merge --no-ff "${{ github.ref }}".replace('refs/heads/', '')
+          git merge --no-ff "${{ github.ref }}" # Corrected to use github.ref
           git push origin main
