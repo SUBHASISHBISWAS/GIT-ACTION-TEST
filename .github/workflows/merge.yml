@@ -26,4 +26,4 @@ jobs:
           git merge --no-ff --allow-unrelated-histories "${{ github.ref }}" # Corrected to use github.ref and allow unrelated histories
           git push origin main
         env:
-          GITHUB_TOKEN: ${{ secrets.ACCESS_TOKEN_GITHUB }} # Use the provided GITHUB_TOKEN
+          ACCESS_TOKEN_GITHUB: ${{ secrets.ACCESS_TOKEN_GITHUB }} # Use the provided GITHUB_TOKEN
